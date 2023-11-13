@@ -1,0 +1,111 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/assets/css/style.css" />
+      <title>
+         Tabla Periódica
+      </title>
+   </head>
+   <body>
+      <main class="container center">
+         <div class="main-title">
+            <h1>
+               TABLA PERIÓDICA DE ELEMENTOS
+            </h1>
+         </div>
+
+         <div class="size child">
+            {{#each elements as |element|}}
+               {{#if (nextLine @index)}}
+                  <div class="next"></div>
+               {{/if}}
+               {{#if (lastTowLines @index)}}
+                  <div class="next-line"></div>
+               {{/if}}
+
+               {{#if (elementPosition @index)}}
+                  {{#if (hideElement element.NO)}}
+                     <div class="element {{position}} {{color element.group}}">
+                        <span class="number {{element.value}}">
+                           {{element.NO}}
+                        </span>
+                        <span class="elementSymbol">
+                           {{element.value}}
+                        </span>
+                        <span class="description">
+                           {{element.description}}
+                        </span>
+                     </div>
+                  {{else}}
+                     <div class="element {{position}} blocked">
+                        <span class="number {{element.value}}">
+                           {{element.NO}}
+                        </span>
+                        <span class="elementSymbol">
+                           {{element.value}}
+                        </span>
+                        <span class="description">
+                           BLOCKED
+                        </span>
+                     </div>
+                  {{/if}}
+               {{/if}}
+            {{/each}}
+            <div class="color-detail">
+               <div class="color-section-metales">
+                  <div class="color-metales">
+                     <p>
+                        <span class="section-p">METALES</span>
+                     </p>
+                     <div class="box-color-alcalinos">
+                        <br />
+                        <p>ALCALINOS</p>
+                     </div>
+                     <div class="box-color-alcalinoterreos">
+                        <p>ALCALINO TÉRREOS</p>
+                     </div>
+                     <div class="box-color-metales-transicion">
+                        <p>METALES DE TRANSICION / BLOQUE D</p>
+                     </div>
+                     <div class="two-boxes">
+                        <div class="box-color-lantanidos">
+                           <p>LANTÁNIDOS</p>
+                        </div>
+                        <div class="box-color-actinidos">
+                           <p>ACTÍNIDOS</p>
+                        </div>
+                     </div>
+                     <div class="box-color-otros-metales">
+                        <p>OTROS<br />METALES</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="box-color-metaloides">
+                  <br />
+                  <br />
+                  <br />
+                  <p>METALOIDES</p>
+               </div>
+
+               <div class="color-section-no-metales">
+                  <div class="color-no-metales">
+                     <p><span class="section-p">NO METALES</span></p>
+                  </div>
+                  <div class="box-color-no-metales">
+                     <p>OTROS NO METALES</p>
+                  </div>
+                  <div class="box-color-halogenos">
+                     <br />
+                     <p>HALÓGENOS</p>
+                  </div>
+                  <div class="box-color-gases-nobles">
+                     <p>GASES NOBLES</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+   </body>
+</html>

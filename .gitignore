@@ -1,0 +1,46 @@
+# Ignore compiled binaries
+*.o
+*.out
+*.exe
+*.dll
+*.class
+
+# Ignore temporary files
+*~
+.DS_Store
+Thumbs.db
+
+# Ignore environment-specific files
+.env
+*.env
+.env.*
+
+# Ignore dependencies
+/node_modules
+/vendor
+/packages
+
+# Ignore logs and databases
+*.log
+*.sqlite
+*.db
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore system-specific files
+*.swp
+*.DS_Store
+
+# Ignore configuration files
+*.config
+
+# Ignore sensitive or personal information
+secrets.txt
+credentials.json
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/

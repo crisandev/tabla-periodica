@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+body {
+   background-image: url("../img/background.jpg");
+   background-size: cover;
+}
+/* ** MAIN SECTION** */
+.container {
+   display: flex;
+   justify-content: center;
+   position: relative;
+}
+
+.child {
+   position: absolute;
+   margin-top: 150px;
+   top: 50%;
+}
+
+.main-title {
+   text-align: center;
+   display: block;
+   position: absolute;
+   margin-bottom: 30px;
+}
+
+.size {
+   max-width: 75pc;
+   width: 10000px;
+}
+
+/* ** EVERY ELEMENT STYLE */
+.element {
+   width: 58.6px;
+   height: 50px;
+   border-style: solid;
+   line-height: 50px;
+   text-align: center;
+   margin: 0 2px 0 0;
+}
+
+.description {
+   display: block;
+   font-size: 10px;
+   margin: -35;
+}
+
+.number {
+   font-size: 10px;
+   display: block;
+   position: absolute;
+   margin-top: -15px;
+   margin-left: 25px;
+}
+
+.number.La-Lu,
+.number.Ac-Lr {
+   font-size: 10px;
+   display: block;
+   position: absolute;
+   margin-top: -15px;
+   margin-left: 15px;
+}
+/* * ELEMENT POSITION  */
+.f-left {
+   float: left;
+}
+
+.f-right {
+   float: right;
+}
+
+/* * COLOR ELEMENT */
+.otros-no-metales {
+   background-color: #8eb989;
+}
+
+.gases-nobles {
+   background-color: #a8c9ea;
+}
+
+.alcalinos {
+   background-color: #bda0c6;
+}
+
+.alcalinoterreos {
+   background-color: #d7a1c5;
+}
+
+.metales-de-transicion {
+   background-color: #ebb956;
+}
+
+.otros-metales {
+   background-color: #f4dc38;
+}
+
+.metaloides {
+   background-color: #e9ec8a;
+}
+
+.halogenos {
+   background-color: #a2c8ca;
+}
+
+.lantanidos {
+   background-color: #e79b54;
+}
+
+.actinidos {
+   background-color: #d89381;
+}
+
+.blocked {
+   background-color: #292929e6;
+}
+
+/* * SEPARATE LINES OF ELEMENTS */
+.lastTwoLines {
+   margin-top: 500px;
+}
+
+.next {
+   width: 500px;
+   height: 10px;
+   clear: both;
+}
+
+/* * APARTAR LAS ULTIMAS DOS LINEAS DEL RESTO * */
+.next-line {
+   margin-top: 100px;
+}
+
+/* * LAST PART || COLOR IDENTIFICATION GUIDE */
+
+.color-detail {
+   margin: 100px 0;
+   display: block;
+   max-width: 75pc;
+   height: 150px;
+   position: relative;
+}
+
+.color-section-metales {
+   width: 62.5%;
+   float: left;
+}
+
+.color-metales {
+   padding-bottom: 6px;
+   background-color: #3b3b3b;
+   display: inline-block;
+   height: 32%;
+   width: 100%;
+}
+
+.box-color-alcalinos {
+   background-color: #bda0c6;
+   width: 20%;
+   height: 206%;
+   /* display: inline-block; */
+   float: left;
+}
+
+.box-color-alcalinoterreos {
+   background-color: #d7a1c5;
+   height: 206%;
+   width: 20%;
+   float: left;
+}
+
+.box-color-metales-transicion {
+   background-color: #ebb956;
+   height: 206%;
+   width: 20%;
+   float: left;
+}
+
+.box-color-lantanidos {
+   background-color: #e79b54;
+   height: 206%;
+   width: 20%;
+   float: left;
+}
+
+.box-color-actinidos {
+   background-color: #d89381;
+   height: 33.3%;
+   width: 12.5%;
+   position: absolute;
+   left: 450px;
+   top: 100px;
+}
+
+.box-color-otros-metales {
+   background-color: #f4dc38;
+   height: 206%;
+   width: 20%;
+   float: left;
+}
+
+.box-color-metaloides {
+   background-color: #e9ec8a;
+   height: 100%;
+   width: 12.5%;
+   float: left;
+}
+
+.color-section-no-metales {
+   width: 25%;
+   float: left;
+}
+.color-no-metales {
+   padding-bottom: 6px;
+   background-color: #3b3b3b;
+   display: inline-block;
+   height: 30%;
+   width: 100%;
+}
+
+.box-color-no-metales {
+   background-color: #8eb989;
+   height: 66%;
+   width: 33.33%;
+   float: left;
+}
+
+.box-color-halogenos {
+   background-color: #a2c8ca;
+   height: 66%;
+   width: 33.33%;
+   float: left;
+}
+.box-color-gases-nobles {
+   background-color: #a8c9ea;
+   height: 66%;
+   width: 33.33%;
+   float: left;
+}
+
+.color-detail div p {
+   text-align: center;
+   color: black;
+   font-family: "Sono", sans-serif;
+   font-weight: 800;
+}
+.section-p {
+   text-align: center;
+   color: white;
+   font-family: "Sono", sans-serif;
+   font-weight: 1000;
+}
+
+/* * PAGE NOT FOUND */
+.page-not-found {
+   width: 500px;
+   margin: 100px auto;
+   background-color: #00376f7d;
+   padding: 50px 150px;
+   border-radius: 30px;
+}
+
+.page-not-found p,
+h4 {
+   font-family: "PT Sans Caption", sans-serif;
+   text-align: center;
+   color: aliceblue;
+}
+.page-not-found h4 {
+   font-family: "Alfa Slab One", cursive;
+   color: rgb(192, 21, 21);
+   font-size: 65px;
+}
+
+.page-not-found p {
+   font-weight: 50;
+   font-size: 30px;
+}
